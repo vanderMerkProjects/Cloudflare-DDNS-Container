@@ -1,0 +1,3343 @@
+{
+  "summary": {
+    "enabledPatterns": {
+      "before": 137,
+      "after": 439
+    },
+    "enabledTools": {
+      "before": 8,
+      "after": 7
+    },
+    "issues": {
+      "before": 0,
+      "after": 12
+    },
+    "analysisRuntime": {
+      "before": 19342,
+      "after": 12806
+    }
+  },
+  "toolChanges": [
+    {
+      "toolId": "Agentlinter",
+      "action": "disabled",
+      "reason": "No AI-agent config files (CLAUDE.md, AGENTS.md, skills, MCP configs) in repo; 0 files routed",
+      "patternsAffected": 30
+    }
+  ],
+  "patternChanges": [
+    {
+      "patternId": "Semgrep_yaml.github-actions.security.third-party-action-not-pinned-to-commit-sha.third-party-action-not-pinned-to-commit-sha",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "New High Security pattern: flags GitHub Actions pinned to mutable tags instead of commit SHAs; 9 real findings in the 3 workflows",
+      "delta": 9,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV2_GHA_1",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "New GitHub Actions least-privilege check: all 3 workflows lack a top-level permissions block; 3 findings",
+      "delta": 3,
+      "parameters": []
+    },
+    {
+      "patternId": "markdownlint_MD001",
+      "toolId": "markdownlint",
+      "action": "enabled",
+      "reason": "Codacy-default markdownlint rule for README/CONTRIBUTING/templates",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "markdownlint_MD003",
+      "toolId": "markdownlint",
+      "action": "enabled",
+      "reason": "Codacy-default markdownlint rule for README/CONTRIBUTING/templates",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "markdownlint_MD004",
+      "toolId": "markdownlint",
+      "action": "enabled",
+      "reason": "Codacy-default markdownlint rule for README/CONTRIBUTING/templates",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "markdownlint_MD005",
+      "toolId": "markdownlint",
+      "action": "enabled",
+      "reason": "Codacy-default markdownlint rule for README/CONTRIBUTING/templates",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "markdownlint_MD007",
+      "toolId": "markdownlint",
+      "action": "enabled",
+      "reason": "Codacy-default markdownlint rule for README/CONTRIBUTING/templates",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "markdownlint_MD010",
+      "toolId": "markdownlint",
+      "action": "enabled",
+      "reason": "Codacy-default markdownlint rule for README/CONTRIBUTING/templates",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "markdownlint_MD012",
+      "toolId": "markdownlint",
+      "action": "enabled",
+      "reason": "Codacy-default markdownlint rule for README/CONTRIBUTING/templates",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "markdownlint_MD014",
+      "toolId": "markdownlint",
+      "action": "enabled",
+      "reason": "Codacy-default markdownlint rule for README/CONTRIBUTING/templates",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "markdownlint_MD018",
+      "toolId": "markdownlint",
+      "action": "enabled",
+      "reason": "Codacy-default markdownlint rule for README/CONTRIBUTING/templates",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "markdownlint_MD019",
+      "toolId": "markdownlint",
+      "action": "enabled",
+      "reason": "Codacy-default markdownlint rule for README/CONTRIBUTING/templates",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "markdownlint_MD020",
+      "toolId": "markdownlint",
+      "action": "enabled",
+      "reason": "Codacy-default markdownlint rule for README/CONTRIBUTING/templates",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "markdownlint_MD021",
+      "toolId": "markdownlint",
+      "action": "enabled",
+      "reason": "Codacy-default markdownlint rule for README/CONTRIBUTING/templates",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "markdownlint_MD022",
+      "toolId": "markdownlint",
+      "action": "enabled",
+      "reason": "Codacy-default markdownlint rule for README/CONTRIBUTING/templates",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "markdownlint_MD023",
+      "toolId": "markdownlint",
+      "action": "enabled",
+      "reason": "Codacy-default markdownlint rule for README/CONTRIBUTING/templates",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "markdownlint_MD024",
+      "toolId": "markdownlint",
+      "action": "enabled",
+      "reason": "Codacy-default markdownlint rule for README/CONTRIBUTING/templates",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "markdownlint_MD025",
+      "toolId": "markdownlint",
+      "action": "enabled",
+      "reason": "Codacy-default markdownlint rule for README/CONTRIBUTING/templates",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "markdownlint_MD026",
+      "toolId": "markdownlint",
+      "action": "enabled",
+      "reason": "Codacy-default markdownlint rule for README/CONTRIBUTING/templates",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "markdownlint_MD027",
+      "toolId": "markdownlint",
+      "action": "enabled",
+      "reason": "Codacy-default markdownlint rule for README/CONTRIBUTING/templates",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "markdownlint_MD028",
+      "toolId": "markdownlint",
+      "action": "enabled",
+      "reason": "Codacy-default markdownlint rule for README/CONTRIBUTING/templates",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "markdownlint_MD029",
+      "toolId": "markdownlint",
+      "action": "enabled",
+      "reason": "Codacy-default markdownlint rule for README/CONTRIBUTING/templates",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "markdownlint_MD030",
+      "toolId": "markdownlint",
+      "action": "enabled",
+      "reason": "Codacy-default markdownlint rule for README/CONTRIBUTING/templates",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "markdownlint_MD033",
+      "toolId": "markdownlint",
+      "action": "enabled",
+      "reason": "Codacy-default markdownlint rule for README/CONTRIBUTING/templates",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "markdownlint_MD034",
+      "toolId": "markdownlint",
+      "action": "enabled",
+      "reason": "Codacy-default markdownlint rule for README/CONTRIBUTING/templates",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "markdownlint_MD035",
+      "toolId": "markdownlint",
+      "action": "enabled",
+      "reason": "Codacy-default markdownlint rule for README/CONTRIBUTING/templates",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "markdownlint_MD037",
+      "toolId": "markdownlint",
+      "action": "enabled",
+      "reason": "Codacy-default markdownlint rule for README/CONTRIBUTING/templates",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "markdownlint_MD038",
+      "toolId": "markdownlint",
+      "action": "enabled",
+      "reason": "Codacy-default markdownlint rule for README/CONTRIBUTING/templates",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "markdownlint_MD039",
+      "toolId": "markdownlint",
+      "action": "enabled",
+      "reason": "Codacy-default markdownlint rule for README/CONTRIBUTING/templates",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "markdownlint_MD042",
+      "toolId": "markdownlint",
+      "action": "enabled",
+      "reason": "Codacy-default markdownlint rule for README/CONTRIBUTING/templates",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "markdownlint_MD044",
+      "toolId": "markdownlint",
+      "action": "enabled",
+      "reason": "Codacy-default markdownlint rule for README/CONTRIBUTING/templates",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "markdownlint_MD045",
+      "toolId": "markdownlint",
+      "action": "enabled",
+      "reason": "Codacy-default markdownlint rule for README/CONTRIBUTING/templates",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "markdownlint_MD046",
+      "toolId": "markdownlint",
+      "action": "enabled",
+      "reason": "Codacy-default markdownlint rule for README/CONTRIBUTING/templates",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "markdownlint_MD048",
+      "toolId": "markdownlint",
+      "action": "enabled",
+      "reason": "Codacy-default markdownlint rule for README/CONTRIBUTING/templates",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "markdownlint_MD049",
+      "toolId": "markdownlint",
+      "action": "enabled",
+      "reason": "Codacy-default markdownlint rule for README/CONTRIBUTING/templates",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "markdownlint_MD050",
+      "toolId": "markdownlint",
+      "action": "enabled",
+      "reason": "Codacy-default markdownlint rule for README/CONTRIBUTING/templates",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "markdownlint_MD053",
+      "toolId": "markdownlint",
+      "action": "enabled",
+      "reason": "Codacy-default markdownlint rule for README/CONTRIBUTING/templates",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "markdownlint_MD054",
+      "toolId": "markdownlint",
+      "action": "enabled",
+      "reason": "Codacy-default markdownlint rule for README/CONTRIBUTING/templates",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "markdownlint_MD055",
+      "toolId": "markdownlint",
+      "action": "enabled",
+      "reason": "Codacy-default markdownlint rule for README/CONTRIBUTING/templates",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "markdownlint_MD056",
+      "toolId": "markdownlint",
+      "action": "enabled",
+      "reason": "Codacy-default markdownlint rule for README/CONTRIBUTING/templates",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "shellcheck_SC2003",
+      "toolId": "shellcheck",
+      "action": "enabled",
+      "reason": "Codacy-default ShellCheck pattern; replaces the untracked .shellcheckrc so Cloud and local agree",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "shellcheck_SC2006",
+      "toolId": "shellcheck",
+      "action": "enabled",
+      "reason": "Codacy-default ShellCheck pattern; replaces the untracked .shellcheckrc so Cloud and local agree",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "shellcheck_SC2016",
+      "toolId": "shellcheck",
+      "action": "enabled",
+      "reason": "Codacy-default ShellCheck pattern; replaces the untracked .shellcheckrc so Cloud and local agree",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "shellcheck_SC2028",
+      "toolId": "shellcheck",
+      "action": "enabled",
+      "reason": "Codacy-default ShellCheck pattern; replaces the untracked .shellcheckrc so Cloud and local agree",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "shellcheck_SC2086",
+      "toolId": "shellcheck",
+      "action": "enabled",
+      "reason": "Codacy-default ShellCheck pattern; replaces the untracked .shellcheckrc so Cloud and local agree",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "shellcheck_SC2092",
+      "toolId": "shellcheck",
+      "action": "enabled",
+      "reason": "Codacy-default ShellCheck pattern; replaces the untracked .shellcheckrc so Cloud and local agree",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "shellcheck_SC2148",
+      "toolId": "shellcheck",
+      "action": "enabled",
+      "reason": "Codacy-default ShellCheck pattern; replaces the untracked .shellcheckrc so Cloud and local agree",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Hadolint_DL3000",
+      "toolId": "Hadolint",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Hadolint_DL3001",
+      "toolId": "Hadolint",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Hadolint_DL3003",
+      "toolId": "Hadolint",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Hadolint_DL3004",
+      "toolId": "Hadolint",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Hadolint_DL3006",
+      "toolId": "Hadolint",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Hadolint_DL3007",
+      "toolId": "Hadolint",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Hadolint_DL3008",
+      "toolId": "Hadolint",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Hadolint_DL3010",
+      "toolId": "Hadolint",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Hadolint_DL3013",
+      "toolId": "Hadolint",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Hadolint_DL3014",
+      "toolId": "Hadolint",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Hadolint_DL3015",
+      "toolId": "Hadolint",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Hadolint_DL3020",
+      "toolId": "Hadolint",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Hadolint_DL3026",
+      "toolId": "Hadolint",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Hadolint_DL4001",
+      "toolId": "Hadolint",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Hadolint_DL4005",
+      "toolId": "Hadolint",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Hadolint_SC1000",
+      "toolId": "Hadolint",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Hadolint_SC1001",
+      "toolId": "Hadolint",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Hadolint_SC1099",
+      "toolId": "Hadolint",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Hadolint_SC2028",
+      "toolId": "Hadolint",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_bash.curl.security.curl-eval.curl-eval",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Shell security coverage for update_dns.sh",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_bash.curl.security.curl-pipe-bash.curl-pipe-bash",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Shell security coverage for update_dns.sh",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_bash.lang.security.ifs-tampering.ifs-tampering",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Shell security coverage for update_dns.sh",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_dockerfile.best-practice.prefer-copy-over-add.prefer-copy-over-add",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_dockerfile.security.dockerd-socket-mount.dockerfile-dockerd-socket-mount",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_dockerfile.security.last-user-is-root.last-user-is-root",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_dockerfile.security.missing-user-entrypoint.missing-user-entrypoint",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_dockerfile.security.missing-user.missing-user",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_dockerfile.security.no-sudo-in-dockerfile.no-sudo-in-dockerfile",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_dockerfile.security.secret-in-build-arg.secret-in-build-arg",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic_injection_rule-BiDiTrojanSource",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Trojan-source (bidi/invisible unicode) detection",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.adafruit-api-key.adafruit-api-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.adobe-client-id.adobe-client-id",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.adobe-client-secret.adobe-client-secret",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.age-secret-key.age-secret-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.airtable-api-key.airtable-api-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.algolia-api-key.algolia-api-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.alibaba-access-key-id.alibaba-access-key-id",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.alibaba-secret-key.alibaba-secret-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.asana-client-id.asana-client-id",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.asana-client-secret.asana-client-secret",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.atlassian-api-token.atlassian-api-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.authress-service-client-access-key.authress-service-client-access-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.aws-access-token.aws-access-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.beamer-api-token.beamer-api-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.bitbucket-client-id.bitbucket-client-id",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.bitbucket-client-secret.bitbucket-client-secret",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.bittrex-access-key.bittrex-access-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.bittrex-secret-key.bittrex-secret-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.clojars-api-token.clojars-api-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.cloudflare-api-key.cloudflare-api-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.cloudflare-global-api-key.cloudflare-global-api-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.cloudflare-origin-ca-key.cloudflare-origin-ca-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.codecov-access-token.codecov-access-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.coinbase-access-token.coinbase-access-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.confluent-access-token.confluent-access-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.confluent-secret-key.confluent-secret-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.contentful-delivery-api-token.contentful-delivery-api-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.databricks-api-token.databricks-api-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.datadog-access-token.datadog-access-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.defined-networking-api-token.defined-networking-api-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.digitalocean-access-token.digitalocean-access-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.digitalocean-pat.digitalocean-pat",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.digitalocean-refresh-token.digitalocean-refresh-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.discord-api-token.discord-api-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.discord-client-id.discord-client-id",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.discord-client-secret.discord-client-secret",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.doppler-api-token.doppler-api-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.droneci-access-token.droneci-access-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.dropbox-api-token.dropbox-api-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.dropbox-long-lived-api-token.dropbox-long-lived-api-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.dropbox-short-lived-api-token.dropbox-short-lived-api-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.duffel-api-token.duffel-api-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.dynatrace-api-token.dynatrace-api-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.easypost-api-token.easypost-api-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.easypost-test-api-token.easypost-test-api-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.etsy-access-token.etsy-access-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.facebook-access-token.facebook-access-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.facebook.facebook",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.facebook-page-access-token.facebook-page-access-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.facebook-secret.facebook-secret",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.fastly-api-token.fastly-api-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.finicity-api-token.finicity-api-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.finicity-client-secret.finicity-client-secret",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.finnhub-access-token.finnhub-access-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.flickr-access-token.flickr-access-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.flutterwave-encryption-key.flutterwave-encryption-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.flutterwave-public-key.flutterwave-public-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.flutterwave-secret-key.flutterwave-secret-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.frameio-api-token.frameio-api-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.freshbooks-access-token.freshbooks-access-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.gcp-api-key.gcp-api-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.generic-api-key.generic-api-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.github-app-token.github-app-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.github-fine-grained-pat.github-fine-grained-pat",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.github-oauth.github-oauth",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.github-pat.github-pat",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.github-refresh-token.github-refresh-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.gitlab-pat.gitlab-pat",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.gitlab-ptt.gitlab-ptt",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.gitlab-rrt.gitlab-rrt",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.gitter-access-token.gitter-access-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.gocardless-api-token.gocardless-api-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.grafana-api-key.grafana-api-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.grafana-cloud-api-token.grafana-cloud-api-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.grafana-service-account-token.grafana-service-account-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.harness-api-key.harness-api-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.hashicorp-tf-api-token.hashicorp-tf-api-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.hashicorp-tf-password.hashicorp-tf-password",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.heroku-api-key.heroku-api-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.hubspot-api-key.hubspot-api-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.huggingface-access-token.huggingface-access-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.huggingface-organization-api-token.huggingface-organization-api-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.infracost-api-token.infracost-api-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.intercom-api-key.intercom-api-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.intra42-client-secret.intra42-client-secret",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.jfrog-api-key.jfrog-api-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.jfrog-identity-token.jfrog-identity-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.jwt-base64.jwt-base64",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.jwt.jwt",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.kraken-access-token.kraken-access-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.kucoin-access-token.kucoin-access-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.kucoin-secret-key.kucoin-secret-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.launchdarkly-access-token.launchdarkly-access-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.linear-api-key.linear-api-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.linear-client-secret.linear-client-secret",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.linkedin-client-id.linkedin-client-id",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.linkedin-client-secret.linkedin-client-secret",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.lob-api-key.lob-api-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.lob-pub-api-key.lob-pub-api-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.mailchimp-api-key.mailchimp-api-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.mailgun-private-api-token.mailgun-private-api-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.mailgun-pub-key.mailgun-pub-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.mailgun-signing-key.mailgun-signing-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.mapbox-api-token.mapbox-api-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.mattermost-access-token.mattermost-access-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.messagebird-api-token.messagebird-api-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.messagebird-client-id.messagebird-client-id",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.microsoft-teams-webhook.microsoft-teams-webhook",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.netlify-access-token.netlify-access-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.new-relic-browser-api-token.new-relic-browser-api-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.new-relic-insert-key.new-relic-insert-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.new-relic-user-api-id.new-relic-user-api-id",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.new-relic-user-api-key.new-relic-user-api-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.npm-access-token.npm-access-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.nytimes-access-token.nytimes-access-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.okta-access-token.okta-access-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.openai-api-key.openai-api-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.plaid-api-token.plaid-api-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.plaid-client-id.plaid-client-id",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.plaid-secret-key.plaid-secret-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.planetscale-api-token.planetscale-api-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.planetscale-oauth-token.planetscale-oauth-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.planetscale-password.planetscale-password",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.postman-api-token.postman-api-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.prefect-api-token.prefect-api-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.private-key.private-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.pulumi-api-token.pulumi-api-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.pypi-upload-token.pypi-upload-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.rapidapi-access-token.rapidapi-access-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.readme-api-token.readme-api-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.rubygems-api-token.rubygems-api-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.scalingo-api-token.scalingo-api-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.sendbird-access-id.sendbird-access-id",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.sendbird-access-token.sendbird-access-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.sendgrid-api-token.sendgrid-api-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.sendinblue-api-token.sendinblue-api-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.sentry-access-token.sentry-access-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.shippo-api-token.shippo-api-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.shopify-access-token.shopify-access-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.shopify-custom-access-token.shopify-custom-access-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.shopify-private-app-access-token.shopify-private-app-access-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.shopify-shared-secret.shopify-shared-secret",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.sidekiq-secret.sidekiq-secret",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.sidekiq-sensitive-url.sidekiq-sensitive-url",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.slack-app-token.slack-app-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.slack-bot-token.slack-bot-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.slack-config-access-token.slack-config-access-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.slack-config-refresh-token.slack-config-refresh-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.slack-legacy-bot-token.slack-legacy-bot-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.slack-legacy-token.slack-legacy-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.slack-legacy-workspace-token.slack-legacy-workspace-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.slack-user-token.slack-user-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.slack-webhook-url.slack-webhook-url",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.snyk-api-token.snyk-api-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.square-access-token.square-access-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.squarespace-access-token.squarespace-access-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.stripe-access-token.stripe-access-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.sumologic-access-id.sumologic-access-id",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.sumologic-access-token.sumologic-access-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.telegram-bot-api-token.telegram-bot-api-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.travisci-access-token.travisci-access-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.twilio-api-key.twilio-api-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.twitch-api-token.twitch-api-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.twitter-access-secret.twitter-access-secret",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.twitter-access-token.twitter-access-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.twitter-api-key.twitter-api-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.twitter-api-secret.twitter-api-secret",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.twitter-bearer-token.twitter-bearer-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.typeform-api-token.typeform-api-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.vault-batch-token.vault-batch-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.vault-service-token.vault-service-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.yandex-access-token.yandex-access-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.yandex-api-key.yandex-api-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.yandex-aws-access-token.yandex-aws-access-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.gitleaks.zendesk-secret-key.zendesk-secret-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-amazon-mws-auth-token.detected-amazon-mws-auth-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-artifactory-password.detected-artifactory-password",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-artifactory-token.detected-artifactory-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-aws-access-key-id-value.detected-aws-access-key-id-value",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-aws-account-id.detected-aws-account-id",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-aws-appsync-graphql-key.detected-aws-appsync-graphql-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-aws-secret-access-key.detected-aws-secret-access-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-aws-session-token.detected-aws-session-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-bcrypt-hash.detected-bcrypt-hash",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-codeclimate.detected-codeclimate",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-etc-shadow.detected-etc-shadow",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-facebook-access-token.detected-facebook-access-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-facebook-oauth.detected-facebook-oauth",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-generic-api-key.detected-generic-api-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-generic-secret.detected-generic-secret",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-github-token.detected-github-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-google-api-key.detected-google-api-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-google-cloud-api-key.detected-google-cloud-api-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-google-gcm-service-account.detected-google-gcm-service-account",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-google-oauth-access-token.detected-google-oauth-access-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-google-oauth.detected-google-oauth-url",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-heroku-api-key.detected-heroku-api-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-hockeyapp.detected-hockeyapp",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-jwt-token.detected-jwt-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-kolide-api-key.detected-kolide-api-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-mailchimp-api-key.detected-mailchimp-api-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-mailgun-api-key.detected-mailgun-api-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-npm-registry-auth-token.detected-npm-registry-auth-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-onfido-live-api-token.detected-onfido-live-api-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-outlook-team.detected-outlook-team",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-paypal-braintree-access-token.detected-paypal-braintree-access-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-pgp-private-key-block.detected-pgp-private-key-block",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-picatic-api-key.detected-picatic-api-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-private-key.detected-private-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-sauce-token.detected-sauce-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-sendgrid-api-key.detected-sendgrid-api-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-slack-token.detected-slack-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-slack-webhook.detected-slack-webhook",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-snyk-api-key.detected-snyk-api-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-softlayer-api-key.detected-softlayer-api-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-sonarqube-docs-api-key.detected-sonarqube-docs-api-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-square-access-token.detected-square-access-token",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-square-oauth-secret.detected-square-oauth-secret",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-ssh-password.detected-ssh-password",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-stripe-restricted-api-key.detected-stripe-restricted-api-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-telegram-bot-api-key.detected-telegram-bot-api-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-twilio-api-key.detected-twilio-api-key",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.detected-username-and-password-in-uri.detected-username-and-password-in-uri",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.secrets.security.google-maps-apikeyleak.google-maps-apikeyleak",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Hardcoded-secret detection across all files (Cloudflare API token and zone ID live in config files)",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_generic.unicode.security.bidi.contains-bidirectional-characters",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Trojan-source (bidi/invisible unicode) detection",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_yaml.docker-compose.security.exposing-docker-socket-volume.exposing-docker-socket-volume",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Docker Compose security rules for compose files, which this Docker project is likely to add",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_yaml.docker-compose.security.no-new-privileges.no-new-privileges",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Docker Compose security rules for compose files, which this Docker project is likely to add",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_yaml.docker-compose.security.privileged-service.privileged-service",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Docker Compose security rules for compose files, which this Docker project is likely to add",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_yaml.docker-compose.security.seccomp-confinement-disabled.seccomp-confinement-disabled",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Docker Compose security rules for compose files, which this Docker project is likely to add",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_yaml.docker-compose.security.selinux-separation-disabled.selinux-separation-disabled",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Docker Compose security rules for compose files, which this Docker project is likely to add",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_yaml.docker-compose.security.writable-filesystem-service.writable-filesystem-service",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "Docker Compose security rules for compose files, which this Docker project is likely to add",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_yaml.github-actions.security.allowed-unsecure-commands.allowed-unsecure-commands",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "GitHub Actions supply-chain and injection coverage for .github/workflows",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_yaml.github-actions.security.audit.unsafe-add-mask-workflow-command.unsafe-add-mask-workflow-command",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "GitHub Actions supply-chain and injection coverage for .github/workflows",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_yaml.github-actions.security.curl-eval.curl-eval",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "GitHub Actions supply-chain and injection coverage for .github/workflows",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_yaml.github-actions.security.github-script-injection.github-script-injection",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "GitHub Actions supply-chain and injection coverage for .github/workflows",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_yaml.github-actions.security.pull-request-target-code-checkout.pull-request-target-code-checkout",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "GitHub Actions supply-chain and injection coverage for .github/workflows",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_yaml.github-actions.security.run-shell-injection.run-shell-injection",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "GitHub Actions supply-chain and injection coverage for .github/workflows",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_yaml.github-actions.security.workflow-run-target-code-checkout.workflow-run-target-code-checkout",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "GitHub Actions supply-chain and injection coverage for .github/workflows",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_yaml.github-actions.semgrep-configuration.semgrep-github-action-push-without-branches.semgrep-github-action-push-without-branches",
+      "toolId": "Semgrep",
+      "action": "enabled",
+      "reason": "GitHub Actions supply-chain and injection coverage for .github/workflows",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV2_DOCKER_1",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV2_DOCKER_10",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV2_DOCKER_11",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV2_DOCKER_12",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV2_DOCKER_13",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV2_DOCKER_14",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV2_DOCKER_15",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV2_DOCKER_16",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV2_DOCKER_17",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV2_DOCKER_2",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV2_DOCKER_3",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV2_DOCKER_4",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV2_DOCKER_5",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV2_DOCKER_6",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV2_DOCKER_7",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV2_DOCKER_8",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV2_DOCKER_9",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV_DOCKER_1",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV_DOCKER_10",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV_DOCKER_11",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV_DOCKER_2",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV_DOCKER_3",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV_DOCKER_4",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV_DOCKER_5",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV_DOCKER_6",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV_DOCKER_7",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV_DOCKER_8",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV_DOCKER_9",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Dockerfile hardening and best-practice coverage for the container image",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV_GHA_1",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Checkov GitHub Actions checks",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV_GHA_2",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Checkov GitHub Actions checks",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV_GHA_3",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Checkov GitHub Actions checks",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV_GHA_4",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Checkov GitHub Actions checks",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV_GHA_5",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Checkov GitHub Actions checks",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV_GHA_6",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Checkov GitHub Actions checks",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV_GHA_7",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Checkov GitHub Actions checks",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV_SECRET_1",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Checkov secret scanning",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV_SECRET_11",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Checkov secret scanning",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV_SECRET_12",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Checkov secret scanning",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV_SECRET_13",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Checkov secret scanning",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV_SECRET_14",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Checkov secret scanning",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV_SECRET_15",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Checkov secret scanning",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV_SECRET_16",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Checkov secret scanning",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV_SECRET_17",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Checkov secret scanning",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV_SECRET_18",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Checkov secret scanning",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV_SECRET_19",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Checkov secret scanning",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV_SECRET_2",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Checkov secret scanning",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV_SECRET_3",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Checkov secret scanning",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV_SECRET_4",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Checkov secret scanning",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV_SECRET_5",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Checkov secret scanning",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV_SECRET_6",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Checkov secret scanning",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV_SECRET_7",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Checkov secret scanning",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV_SECRET_8",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Checkov secret scanning",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV_SECRET_9",
+      "toolId": "Checkov",
+      "action": "enabled",
+      "reason": "Checkov secret scanning",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV2_GCP_36",
+      "toolId": "Checkov",
+      "action": "disabled",
+      "reason": "Wrong stack: GCP/Azure Terraform checks, no IaC in repo",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV2_GCP_35",
+      "toolId": "Checkov",
+      "action": "disabled",
+      "reason": "Wrong stack: GCP/Azure Terraform checks, no IaC in repo",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV_AZURE_144",
+      "toolId": "Checkov",
+      "action": "disabled",
+      "reason": "Wrong stack: GCP/Azure Terraform checks, no IaC in repo",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV_AZURE_142",
+      "toolId": "Checkov",
+      "action": "disabled",
+      "reason": "Wrong stack: GCP/Azure Terraform checks, no IaC in repo",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV2_GCP_3",
+      "toolId": "Checkov",
+      "action": "disabled",
+      "reason": "Wrong stack: GCP/Azure Terraform checks, no IaC in repo",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Checkov_CKV_GCP_3",
+      "toolId": "Checkov",
+      "action": "disabled",
+      "reason": "Wrong stack: GCP/Azure Terraform checks, no IaC in repo",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_codacy.k8s.ingress.nginx.retirement.ingress-resource",
+      "toolId": "Semgrep",
+      "action": "disabled",
+      "reason": "Wrong stack: Kubernetes ingress rules, no Kubernetes manifests",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_codacy.k8s.ingress.nginx.retirement.ingress-class",
+      "toolId": "Semgrep",
+      "action": "disabled",
+      "reason": "Wrong stack: Kubernetes ingress rules, no Kubernetes manifests",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_codacy.k8s.ingress.nginx.retirement.workload",
+      "toolId": "Semgrep",
+      "action": "disabled",
+      "reason": "Wrong stack: Kubernetes ingress rules, no Kubernetes manifests",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_codacy.csharp.security.sql-injection.dynamic-query",
+      "toolId": "Semgrep",
+      "action": "disabled",
+      "reason": "Wrong stack: language not present in repo",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_codacy.python.openai.import-without-guardrails",
+      "toolId": "Semgrep",
+      "action": "disabled",
+      "reason": "Wrong stack: AI SDK detection for Python/TS/Go/Swift/Kotlin/Dart/C#, none present",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_codacy.python.openai.non-guardrails-client-usage",
+      "toolId": "Semgrep",
+      "action": "disabled",
+      "reason": "Wrong stack: AI SDK detection for Python/TS/Go/Swift/Kotlin/Dart/C#, none present",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_codacy.python.openai.non-guardrails-direct-call",
+      "toolId": "Semgrep",
+      "action": "disabled",
+      "reason": "Wrong stack: AI SDK detection for Python/TS/Go/Swift/Kotlin/Dart/C#, none present",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_codacy.generic.plsql.resource-injection",
+      "toolId": "Semgrep",
+      "action": "disabled",
+      "reason": "Wrong stack: language not present in repo",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_codacy.generic.plsql.find-all-passwords",
+      "toolId": "Semgrep",
+      "action": "disabled",
+      "reason": "Wrong stack: language not present in repo",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_ai.typescript.detect-vercel-ai.detect-vercel-ai",
+      "toolId": "Semgrep",
+      "action": "disabled",
+      "reason": "Wrong stack: AI SDK detection for Python/TS/Go/Swift/Kotlin/Dart/C#, none present",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_ai.typescript.detect-promptfoo.detect-promptfoo",
+      "toolId": "Semgrep",
+      "action": "disabled",
+      "reason": "Wrong stack: AI SDK detection for Python/TS/Go/Swift/Kotlin/Dart/C#, none present",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_ai.typescript.detect-openai.detect-openai",
+      "toolId": "Semgrep",
+      "action": "disabled",
+      "reason": "Wrong stack: AI SDK detection for Python/TS/Go/Swift/Kotlin/Dart/C#, none present",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_ai.typescript.detect-mistral.detect-mistral",
+      "toolId": "Semgrep",
+      "action": "disabled",
+      "reason": "Wrong stack: AI SDK detection for Python/TS/Go/Swift/Kotlin/Dart/C#, none present",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_ai.typescript.detect-gemini.detect-gemini",
+      "toolId": "Semgrep",
+      "action": "disabled",
+      "reason": "Wrong stack: AI SDK detection for Python/TS/Go/Swift/Kotlin/Dart/C#, none present",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_ai.typescript.detect-anthropic.detect-anthropic",
+      "toolId": "Semgrep",
+      "action": "disabled",
+      "reason": "Wrong stack: AI SDK detection for Python/TS/Go/Swift/Kotlin/Dart/C#, none present",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_ai.swift.detect-gemini.detect-gemini",
+      "toolId": "Semgrep",
+      "action": "disabled",
+      "reason": "Wrong stack: AI SDK detection for Python/TS/Go/Swift/Kotlin/Dart/C#, none present",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_ai.swift.detect-apple-core-ml.detect-apple-core-ml",
+      "toolId": "Semgrep",
+      "action": "disabled",
+      "reason": "Wrong stack: AI SDK detection for Python/TS/Go/Swift/Kotlin/Dart/C#, none present",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_ai.python.detect-tensorflow.detect-tensorflow",
+      "toolId": "Semgrep",
+      "action": "disabled",
+      "reason": "Wrong stack: AI SDK detection for Python/TS/Go/Swift/Kotlin/Dart/C#, none present",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_ai.python.detect-pytorch.detect-pytorch",
+      "toolId": "Semgrep",
+      "action": "disabled",
+      "reason": "Wrong stack: AI SDK detection for Python/TS/Go/Swift/Kotlin/Dart/C#, none present",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_ai.python.detect-openai.detect-openai",
+      "toolId": "Semgrep",
+      "action": "disabled",
+      "reason": "Wrong stack: AI SDK detection for Python/TS/Go/Swift/Kotlin/Dart/C#, none present",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_ai.python.detect-mistral.detect-mistral",
+      "toolId": "Semgrep",
+      "action": "disabled",
+      "reason": "Wrong stack: AI SDK detection for Python/TS/Go/Swift/Kotlin/Dart/C#, none present",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_ai.python.detect-langchain.detect-langchain",
+      "toolId": "Semgrep",
+      "action": "disabled",
+      "reason": "Wrong stack: AI SDK detection for Python/TS/Go/Swift/Kotlin/Dart/C#, none present",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_ai.python.detect-huggingface.detect-huggingface",
+      "toolId": "Semgrep",
+      "action": "disabled",
+      "reason": "Wrong stack: AI SDK detection for Python/TS/Go/Swift/Kotlin/Dart/C#, none present",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_ai.python.detect-gemini.detect-gemini",
+      "toolId": "Semgrep",
+      "action": "disabled",
+      "reason": "Wrong stack: AI SDK detection for Python/TS/Go/Swift/Kotlin/Dart/C#, none present",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_ai.python.detect-anthropic.detect-anthropic",
+      "toolId": "Semgrep",
+      "action": "disabled",
+      "reason": "Wrong stack: AI SDK detection for Python/TS/Go/Swift/Kotlin/Dart/C#, none present",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_ai.kotlin.detect-gemini.detect-gemini",
+      "toolId": "Semgrep",
+      "action": "disabled",
+      "reason": "Wrong stack: AI SDK detection for Python/TS/Go/Swift/Kotlin/Dart/C#, none present",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_ai.go.detect-openai.detect-openai",
+      "toolId": "Semgrep",
+      "action": "disabled",
+      "reason": "Wrong stack: AI SDK detection for Python/TS/Go/Swift/Kotlin/Dart/C#, none present",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_ai.go.detect-gemini.detect-gemini",
+      "toolId": "Semgrep",
+      "action": "disabled",
+      "reason": "Wrong stack: AI SDK detection for Python/TS/Go/Swift/Kotlin/Dart/C#, none present",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_ai.dart.detect-gemini.detect-gemini",
+      "toolId": "Semgrep",
+      "action": "disabled",
+      "reason": "Wrong stack: AI SDK detection for Python/TS/Go/Swift/Kotlin/Dart/C#, none present",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_ai.csharp.detect-openai.detect-openai",
+      "toolId": "Semgrep",
+      "action": "disabled",
+      "reason": "Wrong stack: AI SDK detection for Python/TS/Go/Swift/Kotlin/Dart/C#, none present",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_codacy.csharp.security.hard-coded-password",
+      "toolId": "Semgrep",
+      "action": "disabled",
+      "reason": "Wrong stack: language not present in repo",
+      "delta": 0,
+      "parameters": []
+    },
+    {
+      "patternId": "Semgrep_python.lang.security.audit.sqli.aiopg-sqli.aiopg-sqli",
+      "toolId": "Semgrep",
+      "action": "disabled",
+      "reason": "Wrong stack: language not present in repo",
+      "delta": 0,
+      "parameters": []
+    }
+  ],
+  "securityCoverage": {
+    "deduplication": [],
+    "newCoverage": [
+      "third-party-action-not-pinned-to-commit-sha (High, 9 issues)",
+      "Checkov CKV2_GHA_1 top-level workflow permissions (Warning, 3 issues)",
+      "225 Opengrep generic.secrets rules + 18 Checkov SECRET checks (0 issues)",
+      "8 other GitHub Actions injection rules, 6 Dockerfile security rules, bash curl-eval/curl-pipe-bash/ifs-tampering/hard-coded-password, bidi/invisible-unicode (0 issues)",
+      "Checkov DOCKER checks and 19 extra Hadolint rules (0 issues)"
+    ],
+    "noisyButKept": [],
+    "notes": [
+      "Trivy kept (secret + SCA + malicious packages); it scans files only, not the alpine base image, so an image scan in CI (trivy image / Docker Scout) is needed for OS package CVEs"
+    ]
+  },
+  "keyImprovements": [
+    "Replaced 32 wrong-stack Opengrep rules (AI SDK detection, C#, Python, PL/SQL, k8s) and 6 GCP/Azure Checkov checks with rules for the actual stack: Shell, Dockerfile, GitHub Actions, YAML/JSON",
+    "Surfaced 12 real findings the Cloud config missed: 9 GitHub Actions not pinned to commit SHA (High Security) and 3 workflows without a top-level permissions block",
+    "ShellCheck moved to Codacy-managed patterns because .shellcheckrc is git-excluded (.git/info/exclude), so Cloud/CI never saw it; update_dns.sh stays clean even with SC2086 active",
+    "Cut broad-config noise from 27 to 12 issues by disabling markdownlint MD032/MD036 (bold-label convention) and removing Spectral plus Checkov OpenAPI/GitHub-org/GitLab/Bitbucket checks",
+    "Added secrets coverage (225 Opengrep + 18 Checkov rules) for a repo whose config files hold a Cloudflare API token and zone IDs",
+    "Local analysis runtime down from 19.3s to 12.8s despite 3x more patterns"
+  ],
+  "localConfigTools": [],
+  "codacyYaml": null,
+  "importResults": {
+    "status": "success",
+    "toolsConfigured": 7,
+    "toolsEnabled": [],
+    "toolsDisabled": [
+      "Agentlinter"
+    ],
+    "errors": [],
+    "warnings": [
+      "First import (without --force) returned 409 for Agentlinter: Cannot disable a tool that is enabled by a standard; resolved by --force re-import with user consent",
+      "Local analysis on Windows requires a Linux container: ShellCheck, Hadolint, Opengrep, Trivy and Checkov are not supported on win32"
+    ],
+    "codingStandards": [
+      "AI Policy",
+      "Default coding standard"
+    ],
+    "forceUsed": true
+  },
+  "cloudVerification": {
+    "reanalysisCompleted": true,
+    "issuesBefore": 9,
+    "issuesAfter": 12,
+    "patternsDisabled": [],
+    "warnings": []
+  }
+}
